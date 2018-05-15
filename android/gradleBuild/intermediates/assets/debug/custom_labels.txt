@@ -1,0 +1,9 @@
+telefon
+bisiklet
+bilgisayar
+giyim
+canta
+ayakkabi
+oyuncak
+kitap
+parfum

@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Wed May 16 02:41:17 EET 2018
+1.base=C\:\\android\\gradleBuild\\intermediates\\assets\\debug
+2.path=custom_labels.txt
+0.baseType=DIRECTORY
+2.base=C\:\\android\\gradleBuild\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=custom_yolov2_tiny.pb
+0.set=ASSET
+0.base=C\:\\android\\gradleBuild\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+1.path=BUILD

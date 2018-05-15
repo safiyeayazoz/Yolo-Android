@@ -1,0 +1,164 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\android\AndroidManifest.xml:16:1-57:12
+MERGED from [org.tensorflow:tensorflow-android:1.8.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.8.0.aar\9994a1b34d12d7ca5d3c4a86f3f6e47a\AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6fb294784b8073174bbddf10d49b22ee\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:17:1-31:12
+	package
+		ADDED from C:\android\AndroidManifest.xml:18:5-50
+	xmlns:tools
+		ADDED from C:\android\AndroidManifest.xml:17:5-51
+	xmlns:android
+		ADDED from C:\android\AndroidManifest.xml:16:11-69
+uses-sdk
+ADDED from C:\android\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6fb294784b8073174bbddf10d49b22ee\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6fb294784b8073174bbddf10d49b22ee\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from C:\android\AndroidManifest.xml:22:9-38
+	android:minSdkVersion
+		ADDED from C:\android\AndroidManifest.xml:21:9-35
+uses-permission#android.permission.INTERNET
+ADDED from C:\android\AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:24:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\android\AndroidManifest.xml:26:5-65
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:26:22-62
+uses-feature#android.hardware.camera
+ADDED from C:\android\AndroidManifest.xml:28:5-60
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:28:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\android\AndroidManifest.xml:29:5-70
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:29:19-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\android\AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:31:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\android\AndroidManifest.xml:32:5-71
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:32:22-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\android\AndroidManifest.xml:33:5-75
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:33:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\android\AndroidManifest.xml:34:5-80
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:34:22-77
+application
+ADDED from C:\android\AndroidManifest.xml:36:5-55:19
+MERGED from [org.tensorflow:tensorflow-android:1.8.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.8.0.aar\9994a1b34d12d7ca5d3c4a86f3f6e47a\AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.8.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.8.0.aar\9994a1b34d12d7ca5d3c4a86f3f6e47a\AndroidManifest.xml:5:5-6:19
+MERGED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6fb294784b8073174bbddf10d49b22ee\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6fb294784b8073174bbddf10d49b22ee\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from C:\android\AndroidManifest.xml:40:9-41
+	android:debuggable
+		ADDED from C:\android\AndroidManifest.xml:38:9-34
+	tools:ignore
+		ADDED from C:\android\AndroidManifest.xml:42:9-42
+	android:icon
+		ADDED from C:\android\AndroidManifest.xml:39:9-38
+	android:allowBackup
+		ADDED from C:\android\AndroidManifest.xml:37:9-35
+	android:theme
+		ADDED from C:\android\AndroidManifest.xml:41:9-45
+activity#org.tensorflow.online_shopping_demo.DetectorActivity
+ADDED from C:\android\AndroidManifest.xml:43:9-53:20
+	android:screenOrientation
+		ADDED from C:\android\AndroidManifest.xml:46:13-49
+	android:label
+		ADDED from C:\android\AndroidManifest.xml:45:13-42
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:44:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\android\AndroidManifest.xml:47:13-52:29
+action#android.intent.action.MAIN
+ADDED from C:\android\AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\android\AndroidManifest.xml:50:17-77
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:50:27-74
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\android\AndroidManifest.xml:51:17-86
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:51:27-83
+activity#org.tensorflow.online_shopping_demo.ListProductsActivity
+ADDED from C:\android\AndroidManifest.xml:54:9-67
+	android:name
+		ADDED from C:\android\AndroidManifest.xml:54:19-55
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.2.aar\e94335a38c5babfafc0506fd25354e42\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.2.aar\6857093bda4dbd96d82e9f1bde600cdb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.2.aar\9ab5b497596ed5516a55607840736d32\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.2.aar\66eec48ce53e85c6598873a4a81ce688\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.2.aar\0c25f01bc0a1c1e7ede0bae0f07ab0df\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.2.aar\b7c690d23c9d57daf6c3a4b18b81eb7d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.2.aar\11f70451d31999dd41bb203041f0b4b1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.2.aar\94fd5315c1e5dbebfad86911a0639afb\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.2] C:\Users\safiye ayazoz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.2.aar\f4f5fb0935a5e3ea186fe493640888da\AndroidManifest.xml:27:13-51
