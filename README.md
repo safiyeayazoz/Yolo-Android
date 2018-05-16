@@ -13,3 +13,10 @@ To training your custom dataset by using Darknet,
   making "jpeg" to "jpg".
   
   - Open cmd or terminal and run "python main.py"  
+  ![ekran alintisi0000](https://user-images.githubusercontent.com/38051809/40126494-1d917fda-5936-11e8-9ff7-68311bbc85f2.PNG)
+
+  - You see interface of program and than write images folder name in Image Dir textbox .(For this tutorial , it is 002) Click Load button.Then draw box  all of your images.
+  
+  
+  
+  
