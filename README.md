@@ -51,7 +51,44 @@ To training your custom dataset by using Darknet,
  3- We prepare dataset to training. Now, we have to create ".data", ".names" and ".cfg" files for custom dataset. 
     Note: There is many yolo architecture. But, I suggest you to use tiny yolo architecture for android. Because of, expecially  weights file size of  Yolov2 or Yolov3 are too large for android.
      
-     1- Create custom.data from any one of "--.data" file and edit like this:
+     1- Create custom.data from any one of "--.data" file and edit according to yourself like this:
+     
+     ![ekran alintisi22](https://user-images.githubusercontent.com/38051809/40129848-08e15d32-593e-11e8-8fca-4c8d99eff362.PNG)
+     
+     2- Create custom.names from one of "--.names"  file and edit according to your class names.
+     3- Create "custom_yolov2_tiny.cfg" from one of "yolov2-tiny.cfg" file. And change this file like this:
+         1- Lines of 3 and 6 : batch=64
+         2- Lines of 4 and 7 : subdivisions=32
+         3- Line of 237 : filters = 30  ---(filters= (count of class + 5)*5)
+         4- Line of 244 : classes = 1 --- classes= count of class
+         
+ 4- Finally, put "yolov2-tiny.conv.13" file  next to  darknet.exe file. 
+ 
+ 5- Start Training: darknet.exe detector train data/custom.data cfg/custom_yolov2_tiny.cfg yolov2-tiny.conv.13
+ 
+(C:\darknet\build\darknet\x64>darknet.exe detector train data/custom.data cfg/custom_yolov2_tiny.cfg yolov2-tiny.conv.13)
+  You can see the avarage loss value for each iterations and the program save weights file into backup folder for every 100 iterasyon automatically.
+  
+ 6- You can stop trainig when the average loss value is between 0.8 and 1.0.
+ 7- To use weights file for android, you have to transformation to protobuf file. 
+     
+     1- Download darkflow from https://github.com/thtrieu/darkflow.
+     2- Create bin folder into darkflow project.
+     3- Put your weights file into bin forder.
+     4  Put your cfg file into darkflow/cfg folder. 
+     5- Convert pb file like this:
+        C:\darkflow> python flow --model cfg/custom_yolov2_tiny.cfg --load bin/custom_yolov2_tiny_3500.weights --savepb
+ 
+ 8- Now you have probuf file.(darkflow/built_graph/)
+ 9- You can add your own protobuf file to the asset file in android and you can run the program.
+     
+     
+ 
+    
+  
+     
+
+      
      
        
          
