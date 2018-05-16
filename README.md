@@ -25,17 +25,13 @@ To training your custom dataset by using Darknet,
   - You have to convert to float value your coordinates values.So, you download convert.py file and place it in the BBox-Label-Tool project folder.
   
   - Change some values:
-  
-     1- line of 15 : classes= ["002"]
-     
-     2- line of 34 : yourPath="your path" (Example my path: "C:/BBox-Label-Tool-Python3.x/Labels/002")
-     
-     3- line of 35 : ypurOutputPath="your output path"
-     
-     4- line of 37 : cls="002"
+       1- line of 15 : classes= ["002"]     
+       2- line of 34 : yourPath="your path" (Example my path: "C:/BBox-Label-Tool-Python3.x/Labels/002")     
+       3- line of 35 : ypurOutputPath="your output path"     
+       4- line of 37 : cls="002"
      
   - Than run "python convert.py"  at terminal.
-  
+
   
  2- Download darknet project from https://github.com/AlexeyAB/darknet .
     To use on Windows you follow darknet->build->darknet->x64
@@ -81,15 +77,14 @@ To training your custom dataset by using Darknet,
  
  8- Now you have probuf file.(darkflow/built_graph/)
  9- You can add your own protobuf file to the asset file in android and you can run the program.
-     
-     
- 
-    
-  
-     
-
+           
       
-     
+![book_det](https://user-images.githubusercontent.com/38051809/40131652-3a8cbcd2-5943-11e8-9abe-ac39b8ad6db7.jpg)
+
+![parfume_det](https://user-images.githubusercontent.com/38051809/40131661-409c0cd6-5943-11e8-9dee-f4388a52bc3e.jpg)
+
+![toy_det](https://user-images.githubusercontent.com/38051809/40131672-46637b68-5943-11e8-9159-73b2dfa26229.jpg)
+  
        
          
         
