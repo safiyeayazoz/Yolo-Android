@@ -48,8 +48,9 @@ To training your custom dataset by using Darknet,
     Note: There is many yolo architecture. But, I suggest you to use tiny yolo architecture for android. Because of, expecially  weights file size of  Yolov2 or Yolov3 are too large for android.
      
      1- Create custom.data from any one of "--.data" file and edit according to yourself like this:
-     
-     ![ekran alintisi22](https://user-images.githubusercontent.com/38051809/40129848-08e15d32-593e-11e8-8fca-4c8d99eff362.PNG)
+
+ ![ekran alintisi22](https://user-images.githubusercontent.com/38051809/40129848-08e15d32-593e-11e8-8fca-4c8d99eff362.PNG)
+    
      
      2- Create custom.names from one of "--.names"  file and edit according to your class names.
      3- Create "custom_yolov2_tiny.cfg" from one of "yolov2-tiny.cfg" file. And change this file like this:
