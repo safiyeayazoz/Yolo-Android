@@ -16,6 +16,9 @@
 
 package org.tensorflow.online_shopping_demo;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -42,6 +45,8 @@ import org.tensorflow.online_shopping_demo.env.BorderedText;
 import org.tensorflow.online_shopping_demo.env.ImageUtils;
 import org.tensorflow.online_shopping_demo.env.Logger;
 import org.tensorflow.online_shopping_demo.tracking.MultiBoxTracker;
+
+import static android.widget.Toast.*;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track
@@ -87,8 +92,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
   // Minimum detection confidence to track a detection.
   private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.6f;
-  private static final float MINIMUM_CONFIDENCE_MULTIBOX = 0.60f;
-  private static final float MINIMUM_CONFIDENCE_YOLO = 0.60f;
+  private static final float MINIMUM_CONFIDENCE_MULTIBOX = 0.50f;
+  private static final float MINIMUM_CONFIDENCE_YOLO = 0.50f;
 
   private static final boolean MAINTAIN_ASPECT = MODE == DetectorMode.YOLO;
 
@@ -120,6 +125,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private String productName;
 
   private BorderedText borderedText;
+
+  private Boolean isFirstDetection = true;
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
     final float textSizePx =
@@ -161,8 +168,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
       } catch (final IOException e) {
         LOGGER.e("Exception initializing classifier!", e);
         Toast toast =
-            Toast.makeText(
-                getApplicationContext(), "Classifier could not be initialized", Toast.LENGTH_SHORT);
+            makeText(
+                getApplicationContext(), "Classifier could not be initialized", LENGTH_SHORT);
         toast.show();
         finish();
       }
@@ -318,6 +325,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
             final Intent intent = new Intent(getApplicationContext(), ListProductsActivity.class);
 
+
+
             for (final Classifier.Recognition result : results) {
               final RectF location = result.getLocation();
               if (location != null && result.getConfidence() >= minimumConfidence) {
@@ -327,6 +336,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 result.setLocation(location);
                 mappedRecognitions.add(result);
                 productName = result.getTitle();
+
               }
             }
 
@@ -335,6 +345,39 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
             requestRender();
             computingDetection = false;
+
+            String label  =  null;
+
+            if(isFirstDetection)
+            {
+              label= productName;
+              firstFragment firstFragment = new firstFragment();
+              FragmentManager manager = getFragmentManager();
+              FragmentTransaction transaction = manager.beginTransaction();
+              transaction.replace(R.id.my_layout,firstFragment,"myFirstFragment");
+              transaction.addToBackStack(null);
+              //transaction.addToBackStack(null);
+             // transaction.add(R.id.my_layout,firstFragment,"myFirstFragment");
+             // transaction.commit();
+              isFirstDetection = false;
+
+            }
+           /* else
+            {
+              if(!productName.equals(label))
+              {
+                label = productName;
+                firstFragment firstFragment = new firstFragment();
+                FragmentManager manager = getFragmentManager();
+               manager.beginTransaction().replace(R.id.my_layout,firstFragment,"myFirstFragment").commit();
+               // transaction.addToBackStack(null);
+               // transaction.add(R.id.my_layout,firstFragment,"myFirstFragment");
+               // transaction.commit();
+
+              }
+            }*/
+
+
 
             trackingOverlay.setOnTouchListener(new View.OnTouchListener() {
 
@@ -345,8 +388,6 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                    // String productName = results.get(0).getTitle();
                     if(productName!=null) {
 
-                      System.out.println("********** ACTION UP ********************");
-                      System.out.println("**********RESULT*******: " + productName);
                       intent.putExtra("PRODUCT_NAME", productName);
                       startActivity(intent);
                     }
