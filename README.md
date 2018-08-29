@@ -80,11 +80,10 @@ To training your custom dataset by using Darknet,
  9- You can add your own protobuf file to the asset file in android and you can run the program.
            
       
-![parfumjpg](https://user-images.githubusercontent.com/38051809/44818963-99c49500-abf3-11e8-8daa-3c7db429e538.jpg)
 
 ![parfume_det](https://user-images.githubusercontent.com/38051809/40131661-409c0cd6-5943-11e8-9dee-f4388a52bc3e.jpg)
-
-![toy_det](https://user-images.githubusercontent.com/38051809/40131672-46637b68-5943-11e8-9159-73b2dfa26229.jpg)
+![toy](https://user-images.githubusercontent.com/38051809/44819004-c24c8f00-abf3-11e8-94f5-14ac86a68e21.jpg)
+![book](https://user-images.githubusercontent.com/38051809/44819006-c4aee900-abf3-11e8-86cf-7351b9a1d743.jpg)
   
        
          
