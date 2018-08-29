@@ -81,10 +81,10 @@ To training your custom dataset by using Darknet,
            
       
 
-![parfume_det](https://user-images.githubusercontent.com/38051809/40131661-409c0cd6-5943-11e8-9dee-f4388a52bc3e.jpg)
-![toy](https://user-images.githubusercontent.com/38051809/44819004-c24c8f00-abf3-11e8-94f5-14ac86a68e21.jpg)
-![book](https://user-images.githubusercontent.com/38051809/44819006-c4aee900-abf3-11e8-86cf-7351b9a1d743.jpg)
-  
+![book](https://user-images.githubusercontent.com/38051809/44819863-26bd1d80-abf7-11e8-9f40-f1a3e492c64e.jpg)
+![parfum](https://user-images.githubusercontent.com/38051809/44819868-2e7cc200-abf7-11e8-9d1f-5e13592c8c95.jpg)
+![page](https://user-images.githubusercontent.com/38051809/44819885-42c0bf00-abf7-11e8-9d36-597eba165ac2.png)
+![toy](https://user-images.githubusercontent.com/38051809/44819904-59671600-abf7-11e8-8ec1-83c7d0836350.jpg)
        
          
         
