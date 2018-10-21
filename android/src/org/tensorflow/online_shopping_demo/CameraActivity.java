@@ -309,7 +309,7 @@ public abstract class CameraActivity extends Activity
     if (deviceLevel == CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY) {
       return requiredLevel == deviceLevel;
     }
-    // deviceLevel is not LEGACY, can use numerical sort
+    // Returns true if the device supports the required hardware level, or better.
     return requiredLevel <= deviceLevel;
   }
 

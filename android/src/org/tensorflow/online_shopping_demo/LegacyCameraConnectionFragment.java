@@ -16,6 +16,7 @@ package org.tensorflow.online_shopping_demo;
  * limitations under the License.
  */
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
@@ -35,6 +36,7 @@ import java.util.List;
 import org.tensorflow.online_shopping_demo.env.ImageUtils;
 import org.tensorflow.online_shopping_demo.env.Logger;
 
+@SuppressLint("ValidFragment")
 public class LegacyCameraConnectionFragment extends Fragment {
   private Camera camera;
   private static final Logger LOGGER = new Logger();

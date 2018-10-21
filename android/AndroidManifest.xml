@@ -15,23 +15,32 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.tensorflow.online_shopping_demo">
+    package="org.tensorflow.online_shopping_demo"
+    tools:ignore="ImpliedTouchscreenHardware">
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="26" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -39,7 +48,7 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/MaterialTheme"
-        tools:ignore="HardcodedDebugMode">
+        tools:ignore="HardcodedDebugMode,MissingTvBanner">
         <activity
             android:name=".DetectorActivity"
             android:label="Yolo Shopping"
@@ -51,7 +60,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListProductsActivity"></activity>
+        <activity android:name=".ListProductsActivity" />
     </application>
 
 </manifest>

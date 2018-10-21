@@ -17,4 +17,5 @@
 <resources>
     <color name="control_background">#cc4285f4</color>
     <color name="opaque_red">#f00</color>
-    </resources>
+
+</resources>

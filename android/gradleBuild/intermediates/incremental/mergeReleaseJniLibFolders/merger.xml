@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\android_git\android\libs"/></dataSet><dataSet config="release"><source path="C:\android_git\android\build-types\release\jniLibs"/></dataSet></merger>

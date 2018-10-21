@@ -1,0 +1,9 @@
+telefon
+bisiklet
+bilgisayar
+giyim
+çanta
+ayakkabı
+oytuncak
+kitap
+parfüm

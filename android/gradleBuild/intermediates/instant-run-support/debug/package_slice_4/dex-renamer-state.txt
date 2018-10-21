@@ -1,4 +1,4 @@
-#Wed May 16 02:41:25 EET 2018
-base.0=C\:\\android\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\5
+#Sun Oct 21 02:08:33 CEST 2018
+base.0=C\:\\android_git\\android\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\24
 path.0=classes.dex
 renamed.0=classes.dex

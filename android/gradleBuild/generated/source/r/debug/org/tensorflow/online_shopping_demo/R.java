@@ -1589,7 +1589,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -2838,9 +2838,11 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f070061;
     public static final int notification_tile_bg=0x7f070062;
     public static final int notify_panel_notification_icon_bg=0x7f070063;
-    public static final int tile=0x7f070064;
-    public static final int tooltip_frame_dark=0x7f070065;
-    public static final int tooltip_frame_light=0x7f070066;
+    public static final int testlogo1=0x7f070064;
+    public static final int testlogo2=0x7f070065;
+    public static final int tile=0x7f070066;
+    public static final int tooltip_frame_dark=0x7f070067;
+    public static final int tooltip_frame_light=0x7f070068;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -2921,75 +2923,76 @@ public final class R {
     public static final int message=0x7f08004b;
     public static final int middle=0x7f08004c;
     public static final int multiply=0x7f08004d;
-    public static final int never=0x7f08004e;
-    public static final int none=0x7f08004f;
-    public static final int normal=0x7f080050;
-    public static final int notification_background=0x7f080051;
-    public static final int notification_main_column=0x7f080052;
-    public static final int notification_main_column_container=0x7f080053;
-    public static final int packed=0x7f080054;
-    public static final int parent=0x7f080055;
-    public static final int parentPanel=0x7f080056;
-    public static final int percent=0x7f080057;
-    public static final int product_description=0x7f080058;
-    public static final int product_price=0x7f080059;
-    public static final int progress_circular=0x7f08005a;
-    public static final int progress_horizontal=0x7f08005b;
-    public static final int radio=0x7f08005c;
-    public static final int results=0x7f08005d;
-    public static final int right=0x7f08005e;
-    public static final int right_icon=0x7f08005f;
-    public static final int right_side=0x7f080060;
-    public static final int screen=0x7f080061;
-    public static final int scrollIndicatorDown=0x7f080062;
-    public static final int scrollIndicatorUp=0x7f080063;
-    public static final int scrollView=0x7f080064;
-    public static final int search_badge=0x7f080065;
-    public static final int search_bar=0x7f080066;
-    public static final int search_button=0x7f080067;
-    public static final int search_close_btn=0x7f080068;
-    public static final int search_edit_frame=0x7f080069;
-    public static final int search_go_btn=0x7f08006a;
-    public static final int search_mag_icon=0x7f08006b;
-    public static final int search_plate=0x7f08006c;
-    public static final int search_src_text=0x7f08006d;
-    public static final int search_voice_btn=0x7f08006e;
-    public static final int select_dialog_listview=0x7f08006f;
-    public static final int shortcut=0x7f080070;
-    public static final int showCustom=0x7f080071;
-    public static final int showHome=0x7f080072;
-    public static final int showTitle=0x7f080073;
-    public static final int spacer=0x7f080074;
-    public static final int split_action_bar=0x7f080075;
-    public static final int spread=0x7f080076;
-    public static final int spread_inside=0x7f080077;
-    public static final int src_atop=0x7f080078;
-    public static final int src_in=0x7f080079;
-    public static final int src_over=0x7f08007a;
-    public static final int standard=0x7f08007b;
-    public static final int start=0x7f08007c;
-    public static final int status_bar_latest_event_content=0x7f08007d;
-    public static final int submenuarrow=0x7f08007e;
-    public static final int submit_area=0x7f08007f;
-    public static final int tabMode=0x7f080080;
-    public static final int text=0x7f080081;
-    public static final int text2=0x7f080082;
-    public static final int textSpacerNoButtons=0x7f080083;
-    public static final int textSpacerNoTitle=0x7f080084;
-    public static final int texture=0x7f080085;
-    public static final int time=0x7f080086;
-    public static final int title=0x7f080087;
-    public static final int titleDividerNoCustom=0x7f080088;
-    public static final int title_template=0x7f080089;
-    public static final int top=0x7f08008a;
-    public static final int topPanel=0x7f08008b;
-    public static final int tracking_overlay=0x7f08008c;
-    public static final int uniform=0x7f08008d;
-    public static final int up=0x7f08008e;
-    public static final int useLogo=0x7f08008f;
-    public static final int withText=0x7f080090;
-    public static final int wrap=0x7f080091;
-    public static final int wrap_content=0x7f080092;
+    public static final int my_layout=0x7f08004e;
+    public static final int never=0x7f08004f;
+    public static final int none=0x7f080050;
+    public static final int normal=0x7f080051;
+    public static final int notification_background=0x7f080052;
+    public static final int notification_main_column=0x7f080053;
+    public static final int notification_main_column_container=0x7f080054;
+    public static final int packed=0x7f080055;
+    public static final int parent=0x7f080056;
+    public static final int parentPanel=0x7f080057;
+    public static final int percent=0x7f080058;
+    public static final int product_description=0x7f080059;
+    public static final int product_price=0x7f08005a;
+    public static final int progress_circular=0x7f08005b;
+    public static final int progress_horizontal=0x7f08005c;
+    public static final int radio=0x7f08005d;
+    public static final int results=0x7f08005e;
+    public static final int right=0x7f08005f;
+    public static final int right_icon=0x7f080060;
+    public static final int right_side=0x7f080061;
+    public static final int screen=0x7f080062;
+    public static final int scrollIndicatorDown=0x7f080063;
+    public static final int scrollIndicatorUp=0x7f080064;
+    public static final int scrollView=0x7f080065;
+    public static final int search_badge=0x7f080066;
+    public static final int search_bar=0x7f080067;
+    public static final int search_button=0x7f080068;
+    public static final int search_close_btn=0x7f080069;
+    public static final int search_edit_frame=0x7f08006a;
+    public static final int search_go_btn=0x7f08006b;
+    public static final int search_mag_icon=0x7f08006c;
+    public static final int search_plate=0x7f08006d;
+    public static final int search_src_text=0x7f08006e;
+    public static final int search_voice_btn=0x7f08006f;
+    public static final int select_dialog_listview=0x7f080070;
+    public static final int shortcut=0x7f080071;
+    public static final int showCustom=0x7f080072;
+    public static final int showHome=0x7f080073;
+    public static final int showTitle=0x7f080074;
+    public static final int spacer=0x7f080075;
+    public static final int split_action_bar=0x7f080076;
+    public static final int spread=0x7f080077;
+    public static final int spread_inside=0x7f080078;
+    public static final int src_atop=0x7f080079;
+    public static final int src_in=0x7f08007a;
+    public static final int src_over=0x7f08007b;
+    public static final int standard=0x7f08007c;
+    public static final int start=0x7f08007d;
+    public static final int status_bar_latest_event_content=0x7f08007e;
+    public static final int submenuarrow=0x7f08007f;
+    public static final int submit_area=0x7f080080;
+    public static final int tabMode=0x7f080081;
+    public static final int text=0x7f080082;
+    public static final int text2=0x7f080083;
+    public static final int textSpacerNoButtons=0x7f080084;
+    public static final int textSpacerNoTitle=0x7f080085;
+    public static final int texture=0x7f080086;
+    public static final int time=0x7f080087;
+    public static final int title=0x7f080088;
+    public static final int titleDividerNoCustom=0x7f080089;
+    public static final int title_template=0x7f08008a;
+    public static final int top=0x7f08008b;
+    public static final int topPanel=0x7f08008c;
+    public static final int tracking_overlay=0x7f08008d;
+    public static final int uniform=0x7f08008e;
+    public static final int up=0x7f08008f;
+    public static final int useLogo=0x7f080090;
+    public static final int withText=0x7f080091;
+    public static final int wrap=0x7f080092;
+    public static final int wrap_content=0x7f080093;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -7588,7 +7591,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>

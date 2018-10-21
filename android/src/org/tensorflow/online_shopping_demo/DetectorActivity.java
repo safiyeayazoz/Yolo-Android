@@ -31,6 +31,7 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.SystemClock;
+import android.speech.tts.TextToSpeech;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -52,7 +53,7 @@ import static android.widget.Toast.*;
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track
  * objects.
  */
-public class DetectorActivity extends CameraActivity implements OnImageAvailableListener {
+public class DetectorActivity extends TextToSpeechActivity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
 
   // Configuration values for the prepackaged multibox model.
@@ -86,14 +87,15 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   // checkpoints.  Optionally use legacy Multibox (trained using an older version of the API)
   // or YOLO.
   private enum DetectorMode {
-    TF_OD_API,MULTIBOX, YOLO;
+    //TF_OD_API,MULTIBOX,
+    YOLO;
   }
   private static final DetectorMode MODE = DetectorMode.YOLO;
 
   // Minimum detection confidence to track a detection.
   private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.6f;
-  private static final float MINIMUM_CONFIDENCE_MULTIBOX = 0.50f;
-  private static final float MINIMUM_CONFIDENCE_YOLO = 0.50f;
+  private static final float MINIMUM_CONFIDENCE_MULTIBOX = 0.60f;
+  private static final float MINIMUM_CONFIDENCE_YOLO = 0.60f;
 
   private static final boolean MAINTAIN_ASPECT = MODE == DetectorMode.YOLO;
 
@@ -148,7 +150,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
               YOLO_OUTPUT_NAMES,
               YOLO_BLOCK_SIZE);
       cropSize = YOLO_INPUT_SIZE;
-    } else if (MODE == DetectorMode.MULTIBOX) {
+    } /*else if (MODE == DetectorMode.MULTIBOX) {
       detector =
           TensorFlowMultiBoxDetector.create(
               getAssets(),
@@ -173,7 +175,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
         toast.show();
         finish();
       }
-    }
+    }*/
 
     previewWidth = size.getWidth();
     previewHeight = size.getHeight();
@@ -309,12 +311,12 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
             //float minimumConfidence = MINIMUM_CONFIDENCE_MULTIBOX;
             switch (MODE) {
-             case TF_OD_API:
+            /* case TF_OD_API:
                 minimumConfidence = MINIMUM_CONFIDENCE_TF_OD_API;
                 break;
               case MULTIBOX:
                 minimumConfidence = MINIMUM_CONFIDENCE_MULTIBOX;
-                break;
+                break;*/
               case YOLO:
                 minimumConfidence = MINIMUM_CONFIDENCE_YOLO;
                 break;
@@ -336,46 +338,17 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 result.setLocation(location);
                 mappedRecognitions.add(result);
                 productName = result.getTitle();
+                speak(results);
 
               }
             }
 
             tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
             trackingOverlay.postInvalidate();
-
             requestRender();
             computingDetection = false;
 
-            String label  =  null;
-
-            if(isFirstDetection)
-            {
-              label= productName;
-              firstFragment firstFragment = new firstFragment();
-              FragmentManager manager = getFragmentManager();
-              FragmentTransaction transaction = manager.beginTransaction();
-              transaction.replace(R.id.my_layout,firstFragment,"myFirstFragment");
-              transaction.addToBackStack(null);
-              //transaction.addToBackStack(null);
-             // transaction.add(R.id.my_layout,firstFragment,"myFirstFragment");
-             // transaction.commit();
-              isFirstDetection = false;
-
-            }
-           /* else
-            {
-              if(!productName.equals(label))
-              {
-                label = productName;
-                firstFragment firstFragment = new firstFragment();
-                FragmentManager manager = getFragmentManager();
-               manager.beginTransaction().replace(R.id.my_layout,firstFragment,"myFirstFragment").commit();
-               // transaction.addToBackStack(null);
-               // transaction.add(R.id.my_layout,firstFragment,"myFirstFragment");
-               // transaction.commit();
-
-              }
-            }*/
+            //speak(results);
 
 
 

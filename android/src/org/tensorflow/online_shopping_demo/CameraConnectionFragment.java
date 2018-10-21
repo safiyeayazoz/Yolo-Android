@@ -16,6 +16,7 @@
 
 package org.tensorflow.online_shopping_demo;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -60,7 +61,15 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 import org.tensorflow.online_shopping_demo.env.Logger;
 
+@SuppressLint("ValidFragment")
 public class CameraConnectionFragment extends Fragment {
+  public CameraConnectionFragment(OnImageAvailableListener imageListener, Size inputSize, int layout, ConnectionCallback cameraConnectionCallback) {
+    this.imageListener = imageListener;
+    this.inputSize = inputSize;
+    this.layout = layout;
+    this.cameraConnectionCallback = cameraConnectionCallback;
+  }
+
   private static final Logger LOGGER = new Logger();
 
   /**
@@ -409,6 +418,7 @@ public class CameraConnectionFragment extends Fragment {
   /**
    * Opens the camera specified by {@link CameraConnectionFragment#cameraId}.
    */
+  @SuppressLint("MissingPermission")
   private void openCamera(final int width, final int height) {
     setUpCameraOutputs();
     configureTransform(width, height);

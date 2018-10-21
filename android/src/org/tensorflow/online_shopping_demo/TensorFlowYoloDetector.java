@@ -49,15 +49,15 @@ public class TensorFlowYoloDetector implements Classifier {
   };
 
   private static final String[] LABELS = {
-    "telefon",
-    "bisiklet",
-    "bilgisayar",
-    "giyim",
-    "canta",
-    "ayakkabi",
-    "oyuncak",
-    "kitap",
-    "parfum"
+    "telephone",
+    "bicycle",
+    "computer",
+    "clothes",
+    "bag",
+    "shose",
+    "toy",
+    "book",
+    "parfume"
   };
 
   // Config values.

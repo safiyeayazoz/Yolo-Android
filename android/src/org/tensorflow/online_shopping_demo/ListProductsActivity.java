@@ -18,7 +18,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ViewFlipper;
 
 import com.squareup.picasso.Picasso;
 
@@ -31,11 +30,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.view.View.INVISIBLE;
-
 public class ListProductsActivity extends Activity {
 
     private ListView listView;
+   // private ViewFlipper viewFlipper;
     public ArrayList list = new ArrayList();
 
     private List<String> imageUrlList = new ArrayList<>();
@@ -47,6 +45,7 @@ public class ListProductsActivity extends Activity {
 
     private static String[] webSiteUrlList ={"https://www.gittigidiyor.com/arama/?k=", "https://www.hepsiburada.com/ara?q="};
 
+
     private String label;
     private String web_url;
 
@@ -57,6 +56,7 @@ public class ListProductsActivity extends Activity {
 
         Bundle extras = getIntent().getExtras();
         label = extras.getString("PRODUCT_NAME");
+
 
         new getData().execute();
 
@@ -92,10 +92,6 @@ public class ListProductsActivity extends Activity {
                 productName = (TextView) view.findViewById(R.id.product_description);
                 productPrice = (TextView) view.findViewById(R.id.product_price);
 
-
-
-
-
             }
 
         }
@@ -124,13 +120,13 @@ public class ListProductsActivity extends Activity {
                 holder.productPrice.setText(price.get(position));
                 if(iconNo.get(position)==1)
                 {
-                    holder.imageViewLogo.setImageResource(R.drawable.gittigidiyor);
+                    holder.imageViewLogo.setImageResource(R.drawable.gittigidiyor );
 
                 }
 
                 if(iconNo.get(position)== 2)
                 {
-                    holder.imageViewLogo.setImageResource(R.drawable.hepsi_burada);
+                    holder.imageViewLogo.setImageResource(R.drawable.hepsi_burada );
                 }
 
 
@@ -140,6 +136,7 @@ public class ListProductsActivity extends Activity {
         }
     }
 
+
     private class getData extends AsyncTask<Void, Void, Void>
     {
         @Override
@@ -147,8 +144,8 @@ public class ListProductsActivity extends Activity {
             super.onPreExecute();
 
             progressDialog = new ProgressDialog(ListProductsActivity.this);
-            progressDialog.setTitle("YÜKLENİYOR");
-            progressDialog.setMessage("Lütfen Bekleyiniz...");
+            progressDialog.setTitle("LOADING");
+            progressDialog.setMessage("Wait Please...");
             progressDialog.setIndeterminate(false);
             progressDialog.show();
 
@@ -167,27 +164,49 @@ public class ListProductsActivity extends Activity {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                    //Toast.makeText( ListProductsActivity.this,productNamesList.get(i),Toast.LENGTH_SHORT).show();
+                   // Toast.makeText( ListProductsActivity.this,productNamesList.get(i),Toast.LENGTH_SHORT).show();
 
                     Intent webPage = new Intent(Intent.ACTION_VIEW, Uri.parse(web_url));
                     startActivity(webPage);
+
+
+
                 }
             });
 
             progressDialog.dismiss();
         }
 
+
         @Override
         protected Void doInBackground(Void... voids) {
 
             try {
 
-                if (label.equals("giyim")) {
+                if (label.equals("clothes"))
                     label = "gömlek";
-                }
+                if (label.equals("computer"))
+                    label = "bilgisayar";
+                if (label.equals("cellphone"))
+                    label = "telefon";
+                if (label.equals("book"))
+                    label = "kitap";
+                if (label.equals("bicycle"))
+                    label = "bisiklet";
+                if (label.equals("perfume"))
+                    label = "parfüm";
+                if (label.equals("toy"))
+                    label = "oyuncak";
+                if (label.equals("bag"))
+                    label = "çanta";
+                if (label.equals("shoes"))
+                    label = "ayakkabı";
+
+
+
 
                 web_url = webSiteUrlList[0] + label;
-                //System.out.println("************** " + web_url);
+                System.out.println("************** " + web_url);
 
                 Document docGittigidiyor = Jsoup.connect(web_url).timeout(30 * 1000).get();
 
@@ -238,11 +257,11 @@ public class ListProductsActivity extends Activity {
 
                         Boolean control = true;
                         String imageUrl = el.absUrl("src");
-                        //System.out.println("###################URL " + imageUrl);
+                        System.out.println("###################URL " + imageUrl);
 
 
                         String productNames = el.absUrl("title");
-                        //System.out.println("############## " + productNames);
+                        System.out.println("############## " + productNames);
 
                         if (imageUrl != ""  ) {
 
@@ -271,7 +290,7 @@ public class ListProductsActivity extends Activity {
 
                     if(priceValuesType_1.size()>0)
                     {
-                        //System.out.println("**************PRICE_TYPE_1 :  " +priceValuesType_1.text());
+                        System.out.println("**************PRIICE_TYPE_1 :  " +priceValuesType_1.text());
                         productPriceList.add(priceValuesType_1.text());
                     }
 
@@ -281,8 +300,8 @@ public class ListProductsActivity extends Activity {
 
                         if(priceValuesType_2.size()>0)
                         {
-                            //System.out.println("**************PRICE_TYPE_2 :  " +priceValuesType_2.text());
-                            productPriceList.add("*DISCOUNT* "+priceValuesType_2.text());
+                            //System.out.println("**************PRIICE_TYPE_2 :  " +priceValuesType_2.text());
+                            productPriceList.add("*DISCOUNT*   "+priceValuesType_2.text());
 
                         }
 
@@ -300,6 +319,22 @@ public class ListProductsActivity extends Activity {
             return null;
         }
 
+    }
+
+    public void setViewFlipper ()
+    {
+        //ImageView img = new ImageView(this);
+       // img.setImageResource();
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        //moveTaskToBack(true);
+        super.onBackPressed();
+
+        Intent intent = new Intent(getApplicationContext(), DetectorActivity.class);
+        startActivity(intent);
 
     }
 

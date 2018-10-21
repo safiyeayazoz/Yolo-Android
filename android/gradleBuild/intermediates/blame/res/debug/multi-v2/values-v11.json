@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\android\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\android_git\\android\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
                     "source": "C:\\Users\\safiye ayazoz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.2.aar\\f4f5fb0935a5e3ea186fe493640888da\\res\\values-v11\\values-v11.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\android\\res\\values-v11\\template-styles.xml",
+                    "source": "C:\\android_git\\android\\res\\values-v11\\template-styles.xml",
                     "from": {
                         "startLines": "19",
                         "startColumns": "4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\android\\res\\values-v11\\styles.xml",
+                    "source": "C:\\android_git\\android\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "7,19,11",
                         "startColumns": "2,2,2",
