@@ -87,8 +87,8 @@ To training your custom dataset by using Darknet,
 ![toy](https://user-images.githubusercontent.com/38051809/44819904-59671600-abf7-11e8-8ec1-83c7d0836350.jpg)
        
          
-     Finally, the working version of the application can be found at this link.
-     https://www.youtube.com/watch?v=q8Ka7dzFymE&feature=youtu.be
+Finally, the working version of the application can be found at this link:
+https://www.youtube.com/watch?v=q8Ka7dzFymE&feature=youtu.be
 
 
   
